@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+  devops-example-frontend:
+    image: pqkallio/devops-example-frontend
+    build: .
+    ports:
+      - 5000:5000
+    container_name: devops-example-frontend
+
+  devops-example-backend:
+    image: pqkallio/devops-example-backend
+    build: .
+    ports:
+      - 8000:8000
+    container_name: devops-example-backend
